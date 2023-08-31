@@ -1,0 +1,143 @@
+* {
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+.App {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.App {
+    width: 100%;
+    height: 100%;
+
+}
+
+.App-header {
+    height: 100vh;
+}
+
+
+/*  */
+.navbar {
+    border-bottom: 3px solid grey;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+}
+
+.navbar button {
+    font-size: xx-large;
+    z-index: 999;
+    cursor: pointer;
+}
+
+.navContainer {
+    width: 100%;
+    height: 100vh;
+    max-height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+    background-color: transparent;
+    overflow: hidden;
+}
+
+.open-nav {
+    display: block;
+}
+
+.draggable {
+    width: 400px;
+    height: 400px;
+    background-color: grey;
+    position: absolute;
+    top: 30%;
+    left: calc((100% - 400px)/2);
+    margin: auto;
+    cursor: grabbing;
+}
+
+.logoHold {
+    cursor: pointer;
+}
+
+.logoHold svg {
+    position: absolute;
+    right: 0;
+    color: red;
+    background-color: white;
+    font-size: xx-large;
+    border-radius: 90%;
+}
+
+/*  */
+
+.containerHold {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: row;
+}
+
+.middleBox {
+    border-left: 3px solid grey;
+    border-right: 3px solid grey;
+    width: 50%;
+    text-align: center;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 50px;
+    min-width: 25%;
+}
+
+.box-side {
+    background-color: rgb(195, 210, 214);
+}
+
+.sizer {
+    width: 10px;
+    background-color: #000;
+    cursor: col-resize;
+}
+
+.holder {
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+}
+
+.content-box {
+    width: 80px;
+    height: 80px;
+    background-color: #868686;
+    border-radius: 10%;
+
+}
+
+
+@media(max-width: 1200px) {
+    .holder {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .bor {
+        min-width: 20%;
+    }
+
+    .middleBox {
+        width: 60%;
+    }
+}
